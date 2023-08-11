@@ -1,0 +1,169 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    list-style: none;
+}
+
+:root {
+    // Primary Colors
+    --primary-color: #65a30d;
+    --secondary-color: #06d6a0;
+    --accent-color: #ffbe0b;
+
+    // Secondary Colors
+    --secondary-1: #15803d;
+    --secondary-2: #84cc16;
+    --secondary-3: #34d399;
+
+    // Neutral Colors
+    --neutral-1: #e5e7eb;
+    --neutral-2: #9ca3af;
+    --neutral-3: #365314;
+    --neutral-4: #14532d;
+    --neutral-5: #059669;
+    --neutral-6: #383808;
+    --neutral-7: #ff0075;
+    --neutral-8: #0076ff;
+    --neutral-9: #f0fdf4;
+    --neutral-black: #16161D;
+    --br-sm: 14px;
+    --transition: all .4s ease-in-out;
+
+}
+
+body {
+    background-color: var(--neutral-1);
+    font-family: 'Bricolage Grotesque', sans-serif;
+    font-size: 1.1rem;
+    color: var(--neutral-2);
+    transition: var(--transition);
+}
+
+a {
+    display: inline-block;
+    list-style: none;
+    color: inherit;
+    font: inherit;
+}
+
+header {
+    height: 100vh;
+    color: var(--neutral-1);
+    overflow: hidden;
+}
+
+section {
+    min-height: 100vh;
+    width: 100%;
+    position: absolute;
+    top: 0;
+    left: 0;
+    padding: 3rem 18rem;
+
+}
+
+.section {
+    transform: translateY(-100) scale(0);
+    transition: var(--transition);
+    background-color: var(--neutral-1);
+}
+
+.sec1 {
+    display: none;
+    transform: translateY(0) scale(1);
+}
+
+.sec2 {
+    display: none;
+    transform: translateY(0) scale(1);
+}
+
+.sec3 {
+    display: none;
+    transform: translateY(0) scale(1);
+}
+
+.sec4 {
+    display: none;
+    transform: translateY(0) scale(1);
+}
+
+.sec5 {
+    display: none;
+    transform: translateY(0) scale(1);
+}
+
+// Start of Controls
+.controls {
+    position: fixed;
+    z-index: 10;
+    top: 50%;
+    right: 3%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    transform: translateY(-50%);
+    .active-btn{
+        background-color: var(--neutral-5) !important;
+        transition: var(--transition);
+        i{
+            color:var(--neutral-1) !important;
+        }
+    }
+    .control {
+        padding: 1rem;
+        cursor: pointer;
+        background-color: var(--neutral-4);
+        width: 45px;
+        height: 45px;
+        border-radius: 50%;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        margin: .7rem 0;
+        i{
+            font-size: 1.2rem;
+            color: var(--accent-color);
+        }
+    }
+}
+
+// End of Controls
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/* Dark Mode */
+.dark {
+    background: var(--neutral-black);
+    color: var(--neutral-1);
+    font-weight: bold;
+    transition: .9s;
+}
+
+/* Will be replace by scss variables color */
+.white {
+    background: var(--neutral-1);
+    color: var(--neutral-black);
+    font-weight: bold;
+    transition: .9s;
+}
+
+/* End of Dark Mode */
