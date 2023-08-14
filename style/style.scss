@@ -37,7 +37,7 @@ body {
     font-family: 'Bricolage Grotesque', sans-serif;
     font-size: 1.1rem;
     color: var(--neutral-2);
-    transition: var(--transition);
+    transition: all .4s ease-in-out;
 }
 
 a {
@@ -51,6 +51,7 @@ header {
     height: 100vh;
     color: var(--neutral-1);
     overflow: hidden;
+    padding: 0 !important;
 }
 
 section {
@@ -64,35 +65,48 @@ section {
 }
 
 .section {
-    transform: translateY(-100) scale(0);
-    transition: var(--transition);
+    display: none;
+    transform: translateY(-100%) scale(0);
+    transition: all .4s ease-in-out;
     background-color: var(--neutral-1);
 }
 
 .sec1 {
     display: none;
     transform: translateY(0) scale(1);
+    background-color: var(--neutral-8);
+
 }
 
 .sec2 {
     display: none;
     transform: translateY(0) scale(1);
+    background-color: #059669;
 }
 
 .sec3 {
     display: none;
     transform: translateY(0) scale(1);
+    background-color: var(--neutral-4);
 }
 
 .sec4 {
     display: none;
     transform: translateY(0) scale(1);
+    background-color: var(--neutral-5);
+
 }
 
 .sec5 {
     display: none;
     transform: translateY(0) scale(1);
+    background-color: var(--neutral-6);
 }
+
+.active{
+    display: block;
+}
+
 
 // Start of Controls
 .controls {
